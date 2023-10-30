@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ultima School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }  
+        
+        .botao-login {
+            display: inline-block;
+        }
+        
+        .botao-externo {
+            background: blue;
+            color: white;
+            padding: 25px 130px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .botao-interno {
+            background: white;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        main {
+            width: 1440px;
+            height: 840px;
+            border: 1px solid black;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .osdois{
+            width: 50%;
+        }
+        
+        #esquerdo {
+            background-color: rgb(255, 255, 255); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            
+            margin-top: 200px;
+        }
+
+        form {
+            width: 400px;
+            height: 500px;
+            left: -200px;
+            display: flex;
+            flex-direction: column;
+            top: 1068px;
+            border-radius: 0px;
+        }
+
+        
+        .form-content {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        input[type="text"], input[type="password"] {
+            position: static; 
+            width: 340px;
+            height: 56px;
+            background: #F4F4F4;
+        }
+
+        .form-options {
+            width: 282px;
+            font-size: 16px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Roboto Slab';
+            
+        #direito {
+            background-color: rgb(255, 255, 255); 
+        }
+
+        .form-options-check {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: center;
+        }  
+    </style>
+</head>
+<body>
+    <main>
+        <div id="esquerdo" class="osdois">
+            <img src="ultimalogo.png" alt="Ultima School" width="154" height="55">
+            <br>
+            <br>
+            <form>
+                <div class="form-content">
+                    <h1>Login</h1>
+
+                    <div>
+                        <i class=""></i>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <i class=""></i>
+                        <input type="password" name="password" id="password" placeholder="Senha">
+                    </div>
+
+                    <div class="form-options">
+                        <div class="form-options-check">
+                            <input type="checkbox" name="remember" id="remember"> <span>Lembrar-me</span>
+                        </div>
+
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
+                    
+                    <div class="botao-login">
+                        <button name="button" class="botao-externo">Entrar</button>
+                    </div>
+                </div>
+            </form>
+            <h4>
+                Desejo criar minha conta 
+            </h4>
+        </div> 
+        <div id="direito" class="osdois">
+            <img src="bigpicture.png" alt="" width="720" height="840">
+        </div>
+    </main>
+</body>
+</html>
